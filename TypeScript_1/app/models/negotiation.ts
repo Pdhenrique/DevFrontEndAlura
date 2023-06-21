@@ -1,27 +1,26 @@
 export class Negotiation {
-  private _date: Date;
-  private _amount: number;
-  private _value: number;
-
-  constructor(date: Date, amount: number, value: number) {
-    this._date = date;
-    this._amount = amount;
-    this._value = value;
-  }
+  constructor(
+    private _date: Date,
+    public readonly amount: number,
+    public readonly value: number //FUNCIONAMENTO SEGUE IGUAL, POREM O TORNANDO PUBLICO E READONLY
+  ) {}
 
   get date(): Date {
-    return this._date;
+    const data = new Date(this._date.getTime());
+    return data;
   }
 
-  get amount(): number {
-    return this._amount;
-  }
+  // get amount(): number {
+  //   return this._amount;
+  // }
 
-  get value(): number {
-    return this._value;
-  }
+  //GETTER REMOVIDO POIS VALUE JÁ É UM VALOR PUBLICO E READONLY
+
+  // get value(): number {
+  //   return this.value;
+  // }
 
   get volume(): number {
-    return this._amount * this._value;
+    return this.amount * this.value;
   }
 }
