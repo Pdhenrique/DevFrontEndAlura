@@ -4,7 +4,7 @@
 
 módulos: 
 
-<img height="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /> TypeScript parte 1: evoluindo seu javaScript. (64%)
+<img height="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /> TypeScript parte 1: evoluindo seu javaScript. (83%)
 
 <img height="16px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /> TypeScript parte 2: avançando na linguagem.
 
