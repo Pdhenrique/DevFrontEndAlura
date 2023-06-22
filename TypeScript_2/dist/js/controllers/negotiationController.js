@@ -1,7 +1,7 @@
 import { Negotiation } from "../models/negotiation.js";
 import { Negotiations } from "../models/negotiations.js";
 import { MessageView } from "../views/messageView.js";
-import { NegotiationView } from "../views/negotiation-view.js";
+import { NegotiationView } from "../views/negotiationView.js";
 export class NegotiationController {
     constructor() {
         this.negotiations = new Negotiations();
