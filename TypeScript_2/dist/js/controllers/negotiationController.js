@@ -6,7 +6,7 @@ import { NegotiationView } from "../views/negotiationView.js";
 export class NegotiationController {
     constructor() {
         this.negotiations = new Negotiations();
-        this.negotiationView = new NegotiationView("#negotiationView");
+        this.negotiationView = new NegotiationView("#negotiationView", true);
         this.messageView = new MessageView("#messageView");
         this.inputDate = document.querySelector("#date");
         this.inputAmount = document.querySelector("#amount");
@@ -14,7 +14,7 @@ export class NegotiationController {
         this.negotiationView.update(this.negotiations);
     }
     add() {
-        const negotiation = this.createNegotiation();
+        const negotiation = Negotiation.criaDe(this.inputDate.value, this.inputAmount.value, this.inputValue.value);
         if (!this.itsBusinessDay(negotiation.date)) {
             this.messageView.update("apenas negociaçõe em dias úteis são aceitas");
             return;
@@ -26,13 +26,6 @@ export class NegotiationController {
     itsBusinessDay(date) {
         return date.getDay() > DayOfWeek.SUNDAY
             && date.getDay() < DayOfWeek.SATURDAY;
-    }
-    createNegotiation() {
-        const exp = /-/g;
-        const date = new Date(this.inputDate.value.replace(exp, ","));
-        const amount = parseInt(this.inputAmount.value);
-        const value = parseFloat(this.inputValue.value);
-        return new Negotiation(date, amount, value);
     }
     clearForm() {
         this.inputDate.value = "";

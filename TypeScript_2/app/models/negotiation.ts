@@ -2,7 +2,7 @@ export class Negotiation {
   constructor(
     private _date: Date,
     public readonly amount: number,
-    public readonly value: number //FUNCIONAMENTO SEGUE IGUAL, POREM O TORNANDO PUBLICO E READONLY
+    public readonly value: number 
   ) {}
 
   get date(): Date {
@@ -10,17 +10,17 @@ export class Negotiation {
     return data;
   }
 
-  // get amount(): number {
-  //   return this._amount;
-  // }
-
-  //GETTER REMOVIDO POIS VALUE JÁ É UM VALOR PUBLICO E READONLY
-
-  // get value(): number {
-  //   return this.value;
-  // }
-
   get volume(): number {
     return this.amount * this.value;
   }
+
+public static criaDe(dateString: string, amountString: string, valueString: string): Negotiation{
+  const exp = /-/g;
+
+  const date = new Date(dateString.replace(exp, ","));
+  const amount = parseInt(amountString);
+  const value = parseFloat(valueString);
+
+  return new Negotiation(date, amount, value);
+}
 }
