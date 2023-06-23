@@ -5,10 +5,15 @@ export abstract class View<T> {
   private scape = false;
 
   constructor(selector: string, scape?: boolean) {
-    this.element = document.querySelector(selector);
-      if(scape){
-        this.scape = scape
-      }
+    const elemento = document.querySelector(selector);
+    if (elemento) {
+      this.element = elemento as HTMLElement;
+    } else {
+      throw Error(`Seletor ${selector} não existe no DOM`);
+    }
+    if (scape) {
+      this.scape = scape;
+    }
   }
   public update(model: T): void {
     let template = this.template(model);
