@@ -6,6 +6,7 @@ import Rodape from "components/Rodape";
 import Container from "components/Container";
 import FavoritosProvider from "contextos/Favoritos";
 import Player from "pages/Player";
+import NaoEncontrada from "pages/NaoEncontrada";
 
 function AppRoutes() {
   return (
@@ -17,6 +18,7 @@ function AppRoutes() {
             <Route path="/" element={<Inicio />} />
             <Route path="/favoritos" element={<Favoritos />} />
             <Route path="/:id" element={<Player/>}/>
+            <Route path="*" element={<NaoEncontrada/>}/>
           </Routes>
         </FavoritosProvider>
       </Container>
