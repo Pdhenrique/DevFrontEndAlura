@@ -1,14 +1,14 @@
-import Inicio from "pages/Inicio";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Inicio from './pages/Inicio';
 
 function AppRoutes() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Inicio />}></Route>
+                <Route path="/" element={<Inicio />} />
             </Routes>
         </BrowserRouter>
     )
 }
 
-export default AppRoutes;
+export default AppRoutes
