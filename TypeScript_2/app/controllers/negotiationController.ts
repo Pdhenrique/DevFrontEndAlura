@@ -28,7 +28,7 @@ export class NegotiationController {
       this.inputValue.value
     )
     if (!this.itsBusinessDay(negotiation.date)) {
-      this.messageView.update("apenas negociaçõe em dias úteis são aceitas");
+      this.messageView.update("only business day trades are accepted");
       return
     }
     this.negotiations.add(negotiation);
@@ -52,6 +52,6 @@ export class NegotiationController {
 
   private updateView(): void {
     this.negotiationView.update(this.negotiations);
-    this.messageView.update("Adicionada com sucesso");
+    this.messageView.update("successfully added");
   }
 }

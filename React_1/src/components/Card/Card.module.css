@@ -8,15 +8,15 @@
     justify-content: space-between;
 }
 
-.capa {
+.cover {
     width: 100%;
 }
 
-.container h2, .favoritar {
+.container h2, .favorite {
     padding: 0 1em;
 }
 
-.favoritar {
+.favorite {
     width: 25px;
 }
 

@@ -9,7 +9,7 @@ export abstract class View<T> {
     if (elemento) {
       this.element = elemento as HTMLElement;
     } else {
-      throw Error(`Seletor ${selector} não existe no DOM`);
+      throw Error(`Selector ${selector} does not exist in DOM`);
     }
     if (scape) {
       this.scape = scape;

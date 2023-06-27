@@ -9,7 +9,7 @@ if(form){
     controller.add();
   });
 } else{
-  throw Error('Não foi possivel inicializar a aplicação.')
+  throw Error('Unable to initialize the application.')
 }
 
 

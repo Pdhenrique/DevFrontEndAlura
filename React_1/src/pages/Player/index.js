@@ -1,8 +1,8 @@
 import Banner from "components/Banner";
 import styles from "./Player.module.css";
-import Titulo from "components/Titulo";
+import Titulo from "components/Title";
 import { useParams } from "react-router-dom";
-import NaoEncontrada from "pages/NaoEncontrada";
+import NaoEncontrada from "pages/NotFound";
 import { useEffect, useState } from "react";
 
 function Player() {

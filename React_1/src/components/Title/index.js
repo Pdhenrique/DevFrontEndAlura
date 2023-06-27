@@ -1,6 +1,6 @@
-import styles from './Titulo.module.css';
+import styles from './Title.module.css';
 
-const Titulo = ({ children }) => {
+const Title = ({ children }) => {
         return(
             <div className={styles.titulo}>
                 {children}
@@ -9,4 +9,4 @@ const Titulo = ({ children }) => {
 
     }
 
-export default Titulo;
+export default Title;
