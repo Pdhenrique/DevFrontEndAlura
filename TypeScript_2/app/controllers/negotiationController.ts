@@ -22,7 +22,7 @@ export class NegotiationController {
   }
 
   public add(): void {
-    const negotiation = Negotiation.criaDe(
+    const negotiation = Negotiation.create(
       this.inputDate.value,
       this.inputAmount.value,
       this.inputValue.value
