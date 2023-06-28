@@ -1,8 +1,15 @@
 import "./App.css";
-import Banner from "./components/Banner/Banner.js";
+import Banner from "./components/Banner/index.js";
+import Form from "./components/Form";
 
-function App() {
-  return <Banner />;
+
+const App = () => {
+  return (
+    <div className="app">
+      <Banner />
+      <Form/>
+    </div>
+  );
 }
 
 export default App;
