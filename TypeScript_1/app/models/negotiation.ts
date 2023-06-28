@@ -6,8 +6,8 @@ export class Negotiation {
   ) {}
 
   get date(): Date {
-    const data = new Date(this._date.getTime());
-    return data;
+    const date = new Date(this._date.getTime());
+    return date;
   }
 
   // get amount(): number {

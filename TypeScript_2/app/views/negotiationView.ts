@@ -8,9 +8,9 @@ export class NegotiationView extends View<Negotiations> {
             <table class="table table-hover table-bordered">
                 <thead>
                     <tr>
-                        <th>DATA</th>
-                        <th>QUANTIDADE</th>
-                        <th>VALOR</th>
+                        <th>DATE</th>
+                        <th>AMOUNT</th>
+                        <th>VALUE</th>
                     </tr>
                 </thead>
                 <tbody>

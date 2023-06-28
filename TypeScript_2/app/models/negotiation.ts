@@ -14,7 +14,7 @@ export class Negotiation {
     return this.amount * this.value;
   }
 
-public static criaDe(dateString: string, amountString: string, valueString: string): Negotiation{
+public static create(dateString: string, amountString: string, valueString: string): Negotiation{
   const exp = /-/g;
 
   const date = new Date(dateString.replace(exp, ","));

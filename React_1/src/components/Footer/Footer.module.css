@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--preto);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer h2 {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--branco);
+}
