@@ -6,7 +6,7 @@ import Button from "../Button";
 import { useState } from "react";
 
 const Form = (props) => {
-
+  
   const [name, setName] = useState("");
 
   const [role, setRole] = useState("");
@@ -16,13 +16,17 @@ const Form = (props) => {
   const [squad, setSquad] = useState("");
 
   const onSave = (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
     props.beRegisterCollaborator({
       name,
       role,
       image,
       squad
     })
+    setName('')
+    setRole('')
+    setImage('')
+    setSquad('')
   };
 
   return (
