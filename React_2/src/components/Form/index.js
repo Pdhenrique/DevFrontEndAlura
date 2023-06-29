@@ -5,16 +5,7 @@ import DropdownList from "../DropdownList";
 import Button from "../Button";
 import { useState } from "react";
 
-const Form = () => {
-  const squads = [
-    "Programming",
-    "Front-end",
-    "Data Science",
-    "Devops",
-    "UX e Design",
-    "Mobile",
-    "Innovation and management",
-  ];
+const Form = (props) => {
 
   const [name, setName] = useState("");
 
@@ -25,8 +16,13 @@ const Form = () => {
   const [squad, setSquad] = useState("");
 
   const onSave = (event) => {
-    event.preventDefault();
-    console.log("foi enviado:", name, role, image, squad);
+    event.preventDefault(); 
+    props.beRegisterCollaborator({
+      name,
+      role,
+      image,
+      squad
+    })
   };
 
   return (
@@ -56,7 +52,7 @@ const Form = () => {
         />
         <DropdownList
           label="squad"
-          itens={squads}
+          itens={props.squads}
           value={squad}
           beChanged={(squad) => setSquad(squad)}
         />
