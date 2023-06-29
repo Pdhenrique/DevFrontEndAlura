@@ -2,28 +2,65 @@ import "./Form.css";
 
 import TextField from "../TextField";
 import DropdownList from "../DropdownList";
+import Button from "../Button";
+import { useState } from "react";
 
 const Form = () => {
-  
   const squads = [
-    'Programming',
-    'Front-end',
-    'Data Science',
-    'Devops',
-    'UX e Design',
-    'Mobile',
-    'Innovation and management'
+    "Programming",
+    "Front-end",
+    "Data Science",
+    "Devops",
+    "UX e Design",
+    "Mobile",
+    "Innovation and management",
+  ];
 
-  ]
-  
+  const [name, setName] = useState("");
+
+  const [role, setRole] = useState("");
+
+  const [image, setImage] = useState("");
+
+  const [squad, setSquad] = useState("");
+
+  const onSave = (event) => {
+    event.preventDefault();
+    console.log("foi enviado:", name, role, image, squad);
+  };
+
   return (
     <section className="form">
-      <form>
+      <form onSubmit={onSave}>
         <h2>fill in the data to create the collaborator's card</h2>
-        <TextField label="Name" placeholder="type your name" />
-        <TextField label="Role" placeholder="type your role" />
-        <TextField label="Image" placeholder="enter image address " />
-        <DropdownList label="squad" itens={squads}/>
+        <TextField
+          required={true}
+          label="Name"
+          placeholder="type your name"
+          value={name}
+          beChanged={(name) => setName(name)}
+        />
+        <TextField
+          required={true}
+          label="Role"
+          placeholder="type your role"
+          value={role}
+          beChanged={(role) => setRole(role)}
+        />
+        <TextField
+          required={true}
+          label="Image"
+          placeholder="enter image address "
+          value={image}
+          beChanged={(image) => setImage(image)}
+        />
+        <DropdownList
+          label="squad"
+          itens={squads}
+          value={squad}
+          beChanged={(squad) => setSquad(squad)}
+        />
+        <Button children="Create card" />
       </form>
     </section>
   );
