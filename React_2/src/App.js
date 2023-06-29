@@ -1,8 +1,9 @@
 import { useState } from "react";
-import "./App.css";
+
 import Banner from "./components/Banner";
 import Form from "./components/Form";
 import Squads from "./components/Squads";
+import Footer from './components/Footer'
 
 const App = () => {
   const squads = [
@@ -47,7 +48,8 @@ const App = () => {
   return (
     <div className="app">
       <Banner />
-      <Form squads={squads.map(squad => squad.name)}
+      <Form
+        squads={squads.map((squad) => squad.name)}
         beRegisterCollaborator={(collaborator) => newCollaborator(collaborator)}
       />
       {squads.map((squad) => (
@@ -56,8 +58,13 @@ const App = () => {
           name={squad.name}
           primaryColor={squad.primaryColor}
           secondaryColor={squad.secondaryColor}
+          collaborator={collaborators}
+          collaborators={collaborators.filter(
+            (collaborator) => collaborator.squad === squad.name
+          )}
         />
       ))}
+      <Footer/>
     </div>
   );
 };
