@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import Form from "./components/Form";
 import Squads from "./components/Squads";
 import Footer from './components/Footer'
+import { ICollaborator } from "./shared/interfaces/ICollaborator";
 
 const App = () => {
   const squads = [
@@ -39,15 +40,15 @@ const App = () => {
     },
   ];
 
-  const [collaborators, setCollaborators] = useState([]);
+  const [collaborators, setCollaborators] = useState<ICollaborator[]>([]);
 
-  const newCollaborator = (collaborator) => {
+  const newCollaborator = (collaborator: ICollaborator) => {
     setCollaborators([...collaborators, collaborator]);
   };
 
   return (
     <div className="app">
-      <Banner />
+      <Banner imageAddress="/images/banner.png" />
       <Form
         squads={squads.map((squad) => squad.name)}
         beRegisterCollaborator={(collaborator) => newCollaborator(collaborator)}
@@ -58,13 +59,12 @@ const App = () => {
           name={squad.name}
           primaryColor={squad.primaryColor}
           secondaryColor={squad.secondaryColor}
-          collaborator={collaborators}
           collaborators={collaborators.filter(
             (collaborator) => collaborator.squad === squad.name
           )}
         />
       ))}
-      <Footer/>
+      <Footer />
     </div>
   );
 };
