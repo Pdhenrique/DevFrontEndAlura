@@ -1,6 +1,14 @@
 import "./DropdownList.css";
 
-const DropdownList = (props) => {
+interface DropdownListProps{
+  required: boolean,
+  beChanged: (value: string) => void,
+  value: string,
+  label: string,
+  itens: string[]
+}
+
+const DropdownList = (props: DropdownListProps) => {
   return (
     <div className="dropdownList">
       <label>{props.label}</label>

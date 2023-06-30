@@ -4,9 +4,14 @@ import TextField from "../TextField";
 import DropdownList from "../DropdownList";
 import Button from "../Button";
 import { useState } from "react";
+import { ICollaborator } from "../../shared/interfaces/ICollaborator";
 
-const Form = (props) => {
-  
+interface FormProps {
+  beRegisterCollaborator: (collaborator: ICollaborator) => void;
+  squads: string[]
+}
+
+const Form = (props: FormProps) => {
   const [name, setName] = useState("");
 
   const [role, setRole] = useState("");
@@ -15,18 +20,18 @@ const Form = (props) => {
 
   const [squad, setSquad] = useState("");
 
-  const onSave = (event) => {
+  const onSave = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     props.beRegisterCollaborator({
       name,
       role,
       image,
-      squad
-    })
-    setName('')
-    setRole('')
-    setImage('')
-    setSquad('')
+      squad,
+    });
+    setName("");
+    setRole("");
+    setImage("");
+    setSquad("");
   };
 
   return (
@@ -55,6 +60,7 @@ const Form = (props) => {
           beChanged={(image) => setImage(image)}
         />
         <DropdownList
+          required={true}
           label="squad"
           itens={props.squads}
           value={squad}
@@ -66,4 +72,4 @@ const Form = (props) => {
   );
 };
 
-export default Form;
+export default Form; 
