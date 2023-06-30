@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.1.0...v1.2.0) (2023-06-30)
+
+
+### Features
+
+* added base component ([9eda0ca](https://github.com/Pdhenrique/DevFrontEndAlura/commit/9eda0cae03e9c271a1856ec0e2f74ad8aadeee13))
+* added component date ([43baa7e](https://github.com/Pdhenrique/DevFrontEndAlura/commit/43baa7ef380557b3f282f82e7363b496824ebc2b))
+* creating shred interface ([43b883b](https://github.com/Pdhenrique/DevFrontEndAlura/commit/43b883bbd062af6d01506ac342739462146b5606))
+
 # [1.1.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.0.0...v1.1.0) (2023-06-30)
 
 
