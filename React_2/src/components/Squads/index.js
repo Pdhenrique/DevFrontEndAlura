@@ -13,6 +13,7 @@ const Squads = (props) => {
         <div className="collaborators">
           {props.collaborators.map((collaborator) => (
             <Collaborator
+              backgroundStyle={props.primaryColor}
               key={collaborator.name}
               name={collaborator.name}
               role={collaborator.role}
