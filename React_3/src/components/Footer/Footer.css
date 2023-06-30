@@ -1,0 +1,19 @@
+.footer{
+    background-color: #6278F7;
+    color: #FFF;
+    
+    min-height: 10vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .socialMedia img{
+   
+   padding: 5px;
+}
+
+.footer .projectLogo img{
+    height: 50px;
+}
