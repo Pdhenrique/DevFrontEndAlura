@@ -6,9 +6,17 @@ interface TextFieldProps {
   label: string;
   value: string;
   required: boolean;
+  type?: "text" | "passowrd" | "date" | "email" | "number";
 }
 
-const TextField = ({beChanged,label, value, required, placeholder }: TextFieldProps) => {
+const TextField = ({
+  beChanged,
+  label,
+  value,
+  required,
+  placeholder,
+  type = "text",
+}: TextFieldProps) => {
   const modifiedPlaceHolder = `${placeholder}`;
 
   const onTyping = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,6 +31,7 @@ const TextField = ({beChanged,label, value, required, placeholder }: TextFieldPr
         onChange={onTyping}
         required={required}
         placeholder={modifiedPlaceHolder}
+        type={type}
       />
     </div>
   );

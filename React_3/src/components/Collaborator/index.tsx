@@ -5,9 +5,10 @@ interface CollaboratorProps{
   image: string,
   role: string,
   backgroundStyle: string,
+  date: string
 }
 
-const Collaborator = ({ name, image, role, backgroundStyle }: CollaboratorProps) => {
+const Collaborator = ({ name, image, role, backgroundStyle, date }: CollaboratorProps) => {
   return (
     <div className="collaborator">
       <div className="headerCard" style={{backgroundColor: backgroundStyle}}>
@@ -16,6 +17,7 @@ const Collaborator = ({ name, image, role, backgroundStyle }: CollaboratorProps)
       <div className="footerCard">
         <h4>{name}</h4>
         <h5>{role}</h5>
+        <h5>{new Date(date).toLocaleDateString()}</h5>
       </div>
     </div>
   );

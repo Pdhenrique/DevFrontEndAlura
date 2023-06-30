@@ -8,7 +8,7 @@ import { ICollaborator } from "../../shared/interfaces/ICollaborator";
 
 interface FormProps {
   beRegisterCollaborator: (collaborator: ICollaborator) => void;
-  squads: string[]
+  squads: string[];
 }
 
 const Form = (props: FormProps) => {
@@ -20,6 +20,8 @@ const Form = (props: FormProps) => {
 
   const [squad, setSquad] = useState("");
 
+  const [date, setDate] = useState("");
+
   const onSave = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     props.beRegisterCollaborator({
@@ -27,11 +29,13 @@ const Form = (props: FormProps) => {
       role,
       image,
       squad,
+      date
     });
     setName("");
     setRole("");
     setImage("");
     setSquad("");
+    setDate("")
   };
 
   return (
@@ -59,6 +63,14 @@ const Form = (props: FormProps) => {
           value={image}
           beChanged={(image) => setImage(image)}
         />
+        <TextField
+          required={true}
+          label="Register date"
+          placeholder=""
+          value={date}
+          beChanged={(value) => setDate(value)}
+          type="date"
+        ></TextField>
         <DropdownList
           required={true}
           label="squad"
@@ -72,4 +84,4 @@ const Form = (props: FormProps) => {
   );
 };
 
-export default Form; 
+export default Form;

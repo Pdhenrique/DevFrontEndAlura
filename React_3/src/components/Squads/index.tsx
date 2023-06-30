@@ -27,6 +27,7 @@ const Squads = (props: SquadsProps) => {
             name={collaborator.name}
             role={collaborator.role}
             image={collaborator.image}
+            date={collaborator.date}
           />
         ))}
       </div>
