@@ -1,13 +1,13 @@
-import { Negotiation } from "./negotiation.js";
+import { Negotiation } from "./negotiation";
 
 export class Negotiations {
   private negotiations: Array<Negotiation> = [];
 
-  public add(negotiation: Negotiation) {
+  add(negotiation: Negotiation) {
     this.negotiations.push(negotiation);
   }
 
-  public list(): ReadonlyArray<Negotiation> {
+  list(): ReadonlyArray<Negotiation> {
     return this.negotiations;
   }
 }

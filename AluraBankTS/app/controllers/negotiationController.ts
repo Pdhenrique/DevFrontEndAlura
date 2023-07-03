@@ -1,8 +1,8 @@
-import { DayOfWeek } from "../enums/dayOfWeek.js";
-import { Negotiation } from "../models/negotiation.js";
-import { Negotiations } from "../models/negotiations.js";
-import { MessageView } from "../views/messageView.js";
-import { NegotiationView } from "../views/negotiationView.js";
+import { DayOfWeek } from "../enums/dayOfWeek";
+import { Negotiation } from "../models/negotiation";
+import { Negotiations } from "../models/negotiations";
+import { MessageView } from "../views/messageView";
+import { NegotiationView } from "../views/negotiationView";
 
 export class NegotiationController {
   private inputDate: HTMLInputElement;

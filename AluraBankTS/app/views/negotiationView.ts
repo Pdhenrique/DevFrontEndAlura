@@ -1,6 +1,6 @@
-import { Negotiation } from "../models/negotiation.js";
-import { Negotiations } from "../models/negotiations.js";
-import { View } from "./view.js";
+import { Negotiation } from "../models/negotiation";
+import { Negotiations } from "../models/negotiations";
+import { View } from "./view";
 
 export class NegotiationView extends View<Negotiations> {
   protected template(model: Negotiations): string {

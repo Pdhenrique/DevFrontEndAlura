@@ -1,4 +1,4 @@
-import { Negotiations } from "../models/negotiations.js";
+import { Negotiations } from "../models/negotiations";
 
 export abstract class View<T> {
   protected element: HTMLElement;

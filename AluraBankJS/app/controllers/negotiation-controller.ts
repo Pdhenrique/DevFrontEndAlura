@@ -1,5 +1,5 @@
-import { Negotiation } from "../models/negotiation.js";
-import { Negotiations } from "../models/negotiations.js";
+import { Negotiation } from "../models/negotiation";
+import { Negotiations } from "../models/negotiations";
 
 export class NegotiationController {
   private inputDate: HTMLInputElement;
