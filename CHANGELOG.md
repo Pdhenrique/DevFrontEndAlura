@@ -1,3 +1,14 @@
+# [1.3.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.2.0...v1.3.0) (2023-07-03)
+
+
+### Features
+
+* added bank statement component ([2ccbc62](https://github.com/Pdhenrique/DevFrontEndAlura/commit/2ccbc62ae7ec8b45f01c2f1e8301b906a3d5247a))
+* added bank statement items ([0eb9f4c](https://github.com/Pdhenrique/DevFrontEndAlura/commit/0eb9f4c34c6e5c2d50c0b7827124c0d5a926c0ac))
+* added base project ([13673d4](https://github.com/Pdhenrique/DevFrontEndAlura/commit/13673d41608674f224954833451a8ad90267e618))
+* adding theme swithcer component ([6feb447](https://github.com/Pdhenrique/DevFrontEndAlura/commit/6feb4470ee94a9df65ac665ef6d2fb67b7200960))
+* creating new styled components ([7a98203](https://github.com/Pdhenrique/DevFrontEndAlura/commit/7a98203c38e79cf740c57e7d54605c8c65ae0101))
+
 # [1.2.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.1.0...v1.2.0) (2023-06-30)
 
 
