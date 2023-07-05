@@ -1,4 +1,4 @@
-.formulario {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -8,7 +8,7 @@
   z-index: 1;
 }
 
-.grupo__opcoes {
+.group__actions {
   border-radius: 6px;
   padding: 8px;
   border: 1px solid #47a138;
@@ -16,20 +16,20 @@
   outline: none;
 }
 
-.legenda__opcoes {
+.subtitle__options {
   font-size: 20px;
   font-weight: 700;
   color: #111111;
   margin-bottom: 1rem;
 }
 
-.legenda {
+.caption {
   padding: 0.8rem 0;
   font-size: 16px;
   font-weight: 700;
 }
 
-.campo__valor {
+.value__field {
   border-radius: 6px;
   padding: 8px;
   border: 1px solid #91e697;
@@ -40,7 +40,7 @@
   margin-bottom: 1rem;
 }
 
-.botao {
+.button {
   background-color: #47a138;
   color: #f7f7f7;
   padding: 0.8rem 0;
@@ -53,6 +53,6 @@
   transition: 0.1s ease-in;
 }
 
-.botao:hover {
+.button:hover {
   background-color: #50bd3f;
 }

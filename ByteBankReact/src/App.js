@@ -1,35 +1,34 @@
 import React, { useState } from 'react';
-import estilos from './App.module.css';
-import { calculaNovoSaldo } from './utils';
+import styles from './App.module.css';
+import { calculateNewBalance } from './utils';
 
-import Cabecalho from './componentes/Cabecalho';
-import Extrato from './componentes/Extrato';
-import Menu from './componentes/Menu';
-import Principal from './componentes/Principal';
-import Transacao from './componentes/Transacao';
+import Header from './components/Header';
+import Statement from './components/Statement';
+import Menu from './components/Menu';
+import Main from './components/Main';
+import Transaction from './components/Transaction';
 
 export default function App() {
-  const [saldo, setSaldo] = useState(1000);
-  const [transacoes, setTransacoes] = useState([]);
+  const [balance, setBalance] = useState(1000);
+  const [transactions, setTransactions] = useState([]);
 
-  function realizarTransacao(valores) {
-    const novoSaldo = calculaNovoSaldo(valores, saldo);
-    setSaldo(novoSaldo);
-    setTransacoes([...transacoes, valores]);
+  function performTransaction(values) {
+    const newBalance = calculateNewBalance(values, balance);
+    setBalance(newBalance);
+    setTransactions([...transactions, values]);
   }
 
   return (
     <>
-      <Cabecalho />
-      <main className={estilos.container}>
+      <Header />
+      <main className={styles.container}>
         <Menu />
-        <div className={estilos.wrapper}>
-          <Principal saldo={saldo} />
-          <Transacao realizarTransacao={realizarTransacao} />
+        <div className={styles.wrapper}>
+          <Main balance={balance} />
+          <Transaction performTransaction={performTransaction} />
         </div>
-        <Extrato transacoes={transacoes} />
+        <Statement transactions={transactions} />
       </main>
     </>
   );
 }
-
