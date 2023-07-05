@@ -6,7 +6,7 @@ describe('deve renderizar um campo de input', () => {
   test('', () => {
     render(<Form />);
 
-    const textField = screen.getByPlaceholderText('Digite um valor');
+    const textField = screen.getByPlaceholderText('Type a value');
 
     expect(textField).toBeInTheDocument();
   });
@@ -14,7 +14,7 @@ describe('deve renderizar um campo de input', () => {
   test('com o type number', () => {
     render(<Form />);
 
-    const textField = screen.getByPlaceholderText('Digite um valor');
+    const textField = screen.getByPlaceholderText('Type a value');
 
     expect(textField).toHaveAttribute('type', 'number');
   });
@@ -22,7 +22,7 @@ describe('deve renderizar um campo de input', () => {
   test('que pode ser preenchido', () => {
     render(<Form />);
 
-    const textField = screen.getByPlaceholderText('Digite um valor');
+    const textField = screen.getByPlaceholderText('Type a value');
 
     userEvent.type(textField, '50');
     expect(textField).toHaveValue(50);

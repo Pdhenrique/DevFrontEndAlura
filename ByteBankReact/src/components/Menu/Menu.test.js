@@ -10,23 +10,16 @@ test('should render a home page link', () => {
 
 test('should render a list of links', () => {
   render(<Menu />);
-  const LinksLista = screen.getAllByRole('link');
+  const linksList = screen.getAllByRole('link');
 
-  expect(LinksLista).toHaveLength(4);
+  expect(linksList).toHaveLength(4);
 });
 
 test("Shouldn't render link to Extract", () => {
   render(<Menu />);
-  const LinksExtrato = screen.queryByText('Extrato');
+  const LinksExtract = screen.queryByText('Extract');
 
-  expect(LinksExtrato).not.toBeInTheDocument();
-});
-
-test("Shouldn't render link to Extract", () => {
-  render(<Menu />);
-  const LinksExtrato = screen.queryByText('Extrato');
-
-  expect(LinksExtrato).not.toBeInTheDocument();
+  expect(LinksExtract).not.toBeInTheDocument();
 });
 
 test('should render a list of links with the class link', () => {

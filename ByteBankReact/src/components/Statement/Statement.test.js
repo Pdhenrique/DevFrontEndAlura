@@ -9,7 +9,7 @@ test('deve renderizar', () => {
     },
   ];
 
-  render(<Statement transaction={transactions} />);
+  render(<Statement transactionsPar={transactions} />);
 
   const lista = screen.getByRole('list');
   expect(lista).toBeInTheDocument();
