@@ -3,10 +3,10 @@ import React from 'react';
 export default function Transactions({ transaction, styles }) {
   return (
     <li>
-      <p className={styles.mes}>{transaction.mes}</p>
+      <p className={styles.month}>{transaction.month}</p>
       <div className={styles.transaction}>
         <p data-testid="transactionType">{transaction.transaction}</p>
-        <span>{transaction.data}</span>
+        <span>{transaction.date}</span>
       </div>
       {transaction.transaction === 'Transfer' ? (
         <h3
