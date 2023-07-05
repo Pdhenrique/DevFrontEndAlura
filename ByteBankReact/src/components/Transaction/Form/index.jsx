@@ -19,7 +19,7 @@ export default function Form({ performTransaction }) {
     performTransaction({
       ...valueState,
       date: transactionDate,
-      mes: transactionMonth[0].toUpperCase() + transactionMonth.substring(1),
+      month: transactionMonth[0].toUpperCase() + transactionMonth.substring(1),
     });
     setValueState({ ...valueState, value: '' });
   }
@@ -33,14 +33,14 @@ export default function Form({ performTransaction }) {
         name="transaction"
         data-testid="select-option"
       >
-        <option defaultValue="Selecione um tipo de transação">
-          Selecione um tipo de transação
+        <option defaultValue="Select transaction type">
+          Select transaction type
         </option>
         <option value="Deposit">Deposit</option>
         <option value="transfer">transfer</option>
       </select>
       <label htmlFor="value" className={styles.subtitle}>
-        Valor
+        Value
       </label>
       <input
         onChange={handleChange}
@@ -49,7 +49,7 @@ export default function Form({ performTransaction }) {
         value={valueState.value}
         name="value"
         id="value"
-        placeholder="Digite um valor"
+        placeholder="Type a value"
       />
       <button className={styles.button} type="submit">
         Release transaction

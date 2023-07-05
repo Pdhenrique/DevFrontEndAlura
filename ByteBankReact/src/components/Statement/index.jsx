@@ -1,15 +1,19 @@
 import React from 'react';
 import styles from './Statement.module.css';
-import Transacoes from './transactions';
+import Transactions from './Transactions';
 
-export default function Statement({ transactions }) {
+export default function Statement({ transactionsPar }) {
   return (
     <section className={styles.container}>
-      <h2 className={styles.titulo}>Extrato</h2>
+      <h2 className={styles.title}>Extract</h2>
       <ul>
-        {transactions.map((transaction, index) => {
+        {transactionsPar.map((transaction, index) => {
           return (
-            <Transacoes key={index} transaction={transaction} styles={styles} />
+            <Transactions
+              key={index}
+              transaction={transaction}
+              styles={styles}
+            />
           );
         })}
       </ul>

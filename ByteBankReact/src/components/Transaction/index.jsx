@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Transacao.module.css';
+import styles from './Transaction.module.css';
 import { ReactComponent as Illustration } from './ilustracao.svg';
 import Form from './Form';
 
