@@ -27,7 +27,7 @@ export default function App() {
           <Main balance={balance} />
           <Transaction performTransaction={performTransaction} />
         </div>
-        <Statement transactions={transactions} />
+        <Statement transactionsPar={transactions} />
       </main>
     </>
   );
