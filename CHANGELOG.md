@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.4.0...v1.5.0) (2023-07-07)
+
+
+### Features
+
+* added submodules ([d1cbe05](https://github.com/Pdhenrique/DevFrontEndAlura/commit/d1cbe058ec1f89401f6bb6636fd9ab96f400f570))
+
 # [1.4.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.3.0...v1.4.0) (2023-07-06)
 
 
