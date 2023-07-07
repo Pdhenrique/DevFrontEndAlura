@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.3.0...v1.4.0) (2023-07-06)
+
+
+### Features
+
+* added base project ([10616ed](https://github.com/Pdhenrique/DevFrontEndAlura/commit/10616edb427d3d59c77c6393a9b6e04cb70919fa))
+
 # [1.3.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.2.0...v1.3.0) (2023-07-03)
 
 

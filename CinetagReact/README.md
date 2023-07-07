@@ -1,6 +1,6 @@
-# OrganoReact
+# CinetagReact
 
-Curso alura: [React-desenvolvendo-javascript](https://cursos.alura.com.br/course/react-desenvolvendo-javascript)
+Curso alura: [React-praticando-react-js](https://cursos.alura.com.br/course/react-praticando-react-js)
 
 
 ## Tecnologias Utilizadas
@@ -26,7 +26,7 @@ Siga os passos abaixo para configurar e executar o projeto localmente:
    ```bash
 
 # 1. Clone este repositório:
-   git clone https://github.com/Pdhenrique/OrganoReactJS
+   git clone https://github.com/Pdhenrique/CinetagReact
 
 # 2. Acesse o diretório do projeto:
 cd nome-do-projeto
