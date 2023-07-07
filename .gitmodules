@@ -1,0 +1,21 @@
+[submodule "OrganoReactJS"]
+	path = OrganoReactJS
+	url = https://github.com/Pdhenrique/OrganoReactJS
+[submodule "OrganoReactTS"]
+	path = OrganoReactTS
+	url = https://github.com/Pdhenrique/OrganoReactTS
+[submodule "CinetagReact"]
+	path = CinetagReact
+	url = https://github.com/Pdhenrique/CinetagReact
+[submodule "ByteBankReact"]
+	path = ByteBankReact
+	url = https://github.com/Pdhenrique/ByteBankReact
+[submodule "AluraBankTS"]
+	path = AluraBankTS
+	url = https://github.com/Pdhenrique/CinetagReact
+[submodule "AluraBankJS"]
+	path = AluraBankJS
+	url = https://github.com/Pdhenrique/AluraBankJS
+[submodule "SmartBankAlura"]
+	path = SmartBankAlura
+	url = https://github.com/Pdhenrique/SmartBankAlura
