@@ -19,3 +19,6 @@
 [submodule "SmartBankAlura"]
 	path = SmartBankAlura
 	url = https://github.com/Pdhenrique/SmartBankAlura
+[submodule "Aluroni"]
+	path = Aluroni
+	url = https://github.com/Pdhenrique/Aluroni
