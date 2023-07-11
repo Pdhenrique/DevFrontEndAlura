@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.5.0...v1.6.0) (2023-07-11)
+
+
+### Features
+
+* added menu and menu filter ([d9cb29d](https://github.com/Pdhenrique/DevFrontEndAlura/commit/d9cb29d6cd037a82641c5a199b3d6df1352adb37))
+* added menu and search engine ([bd3986b](https://github.com/Pdhenrique/DevFrontEndAlura/commit/bd3986b6e3cc6853f8eb78a5994d273a4a040547))
+* added submodule aluroni ([57650b2](https://github.com/Pdhenrique/DevFrontEndAlura/commit/57650b28163654b751b0c04c67a321ee5938d0e2))
+
 # [1.5.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.4.0...v1.5.0) (2023-07-07)
 
 
