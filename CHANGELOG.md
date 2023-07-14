@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.6.0...v1.7.0) (2023-07-14)
+
+
+### Features
+
+* added react routes ([397293a](https://github.com/Pdhenrique/DevFrontEndAlura/commit/397293afd01cbc8b448da924bcdb5668fd52bcfa))
+* adding dishes route ([e360f23](https://github.com/Pdhenrique/DevFrontEndAlura/commit/e360f23340e94d89dcc73deb8f1a6aee7d338123))
+* adding new pages and adjusting types ([5319a09](https://github.com/Pdhenrique/DevFrontEndAlura/commit/5319a092e29a26656c00594926b875663db4475f))
+
 # [1.6.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.5.0...v1.6.0) (2023-07-11)
 
 
