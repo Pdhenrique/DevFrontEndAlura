@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.7.0...v1.8.0) (2023-07-18)
+
+
+### Features
+
+* optimizing Aluroni performance ([5ba5356](https://github.com/Pdhenrique/DevFrontEndAlura/commit/5ba5356b35c9c6d575543695abd119451bcb0303))
+
 # [1.7.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.6.0...v1.7.0) (2023-07-14)
 
 
