@@ -22,3 +22,6 @@
 [submodule "Aluroni"]
 	path = Aluroni
 	url = https://github.com/Pdhenrique/Aluroni
+[submodule "ReactContextAPI"]
+	path = ReactContextAPI
+	url = https://github.com/Pdhenrique/ReactContextAPI
