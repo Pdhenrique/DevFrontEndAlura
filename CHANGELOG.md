@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.8.0...v1.9.0) (2023-07-18)
+
+
+### Features
+
+* adding new ReactContextAPI project ([8bf1b26](https://github.com/Pdhenrique/DevFrontEndAlura/commit/8bf1b265059e5f3e8e5ae3fb632047cc69579ff3))
+
 # [1.8.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.7.0...v1.8.0) (2023-07-18)
 
 
