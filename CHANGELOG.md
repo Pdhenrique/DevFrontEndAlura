@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.9.0...v1.10.0) (2023-07-20)
+
+
+### Features
+
+* creating context and routes ([46aca3d](https://github.com/Pdhenrique/DevFrontEndAlura/commit/46aca3dcb0a3b811b53fbebf5fbbed4a44ec443e))
+
 # [1.9.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.8.0...v1.9.0) (2023-07-18)
 
 
