@@ -25,3 +25,6 @@
 [submodule "ReactContextAPI"]
 	path = ReactContextAPI
 	url = https://github.com/Pdhenrique/ReactContextAPI
+[submodule "DrawerAlura"]
+	path = DrawerAlura
+	url = git@github.com:Pdhenrique/DrawerAlura.git
