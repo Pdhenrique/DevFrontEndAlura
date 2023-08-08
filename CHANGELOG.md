@@ -1,3 +1,15 @@
+# [1.11.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.10.0...v1.11.0) (2023-08-08)
+
+
+### Features
+
+* added AluraBook submodule ([8feb5d8](https://github.com/Pdhenrique/DevFrontEndAlura/commit/8feb5d8206d28d7a4a91628df2f0a6fc75366a95))
+* added drawer base project ([ac10348](https://github.com/Pdhenrique/DevFrontEndAlura/commit/ac103487c4155e79232ee91eee91300f24afc915))
+* added drawer images ([5e7b028](https://github.com/Pdhenrique/DevFrontEndAlura/commit/5e7b028eeeb5ff164245d86d5ca77fab2e36d7bd))
+* adding cart funcionality ([37ad5b8](https://github.com/Pdhenrique/DevFrontEndAlura/commit/37ad5b8eaed14bdcd5ff5c58922d381a5f968cbf))
+* adding payment methods ([48eb619](https://github.com/Pdhenrique/DevFrontEndAlura/commit/48eb619ced3c90b7852ff31a9f651eead37db2f2))
+* adding user balance to payments ([fe4544e](https://github.com/Pdhenrique/DevFrontEndAlura/commit/fe4544ebe9218abba6840ac4ddfdd1c9f65ea3c8))
+
 # [1.10.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.9.0...v1.10.0) (2023-07-20)
 
 
