@@ -29,3 +29,6 @@
 	path = DrawerAlura
 	url = git@github.com:Pdhenrique/DrawerAlura.git
 
+[submodule "AluraBookDS"]
+	path = AluraBookDS
+	url = git@github.com:Pdhenrique/AluraBookDS.git
