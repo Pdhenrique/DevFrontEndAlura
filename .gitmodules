@@ -28,6 +28,4 @@
 [submodule "DrawerAlura"]
 	path = DrawerAlura
 	url = git@github.com:Pdhenrique/DrawerAlura.git
-[submodule "AluraBookReact"]
-	path = AluraBookReact
-	url = git@github.com:Pdhenrique/AluraBookReact.git
+
