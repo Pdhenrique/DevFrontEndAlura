@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.11.0...v1.12.0) (2023-08-22)
+
+
+### Features
+
+* added aluraBook vite project ([ef02513](https://github.com/Pdhenrique/DevFrontEndAlura/commit/ef02513b97dc90c20d2eb4356af22dcebc13a3ee))
+
 # [1.11.0](https://github.com/Pdhenrique/DevFrontEndAlura/compare/v1.10.0...v1.11.0) (2023-08-08)
 
 
