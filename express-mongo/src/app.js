@@ -1,4 +1,15 @@
 import express from 'express'
+import connectDataBase from './config/dbConnect.js'
+
+const connection = await connectDataBase()
+
+connection.on("error", (error) => {
+  console.error("Connection error", error)
+} )
+
+connection.once("open", () => {
+  console.log("Connection successfully")
+})
 
 const App = express()
 App.use(express.json())
@@ -55,3 +66,4 @@ res.status(200).send("Livro removido")
 })
 
 export default App
+
