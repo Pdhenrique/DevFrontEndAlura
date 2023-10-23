@@ -10,10 +10,29 @@ class BookController {
       res.status(500).json({message: `${erro.message} - falha na requisição`})
     } 
   }
+  static async ListBookById (req, res){
+    try{
+      const id = req.params.id
+      const resBook = await books.findById(id)
+      res.status(200).json(resBook)
+    } catch (erro){
+      res.status(500).json({message: `${erro.message} - falha na requisição do livro`})
+    } 
+  }
+
+  static async updateBook (req, res){
+    try{
+      const id = req.params.id
+      await books.findByIdAndUpdate(id, req.body)
+      res.status(200).json({ message: "livro atualizado"})
+    } catch (erro){
+      res.status(500).json({message: `${erro.message} - falha na requisição do livro`})
+    } 
+  }
 
   static async RegisterBook (req, res) {
     try{
-      const newBook = await books.create(req,body)
+      const newBook = await books.create(req.body)
       res.status(201).json({ 
         message: "Cadastrado com sucesso", 
         book: newBook 
