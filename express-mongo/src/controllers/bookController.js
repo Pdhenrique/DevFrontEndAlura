@@ -20,7 +20,7 @@ class BookController {
     } 
   }
 
-  static async updateBook (req, res){
+  static async UpdateBook (req, res){
     try{
       const id = req.params.id
       await books.findByIdAndUpdate(id, req.body)
@@ -39,6 +39,16 @@ class BookController {
       })
     }catch (erro) {
       res.status(500).json({message: `${erro.message} - falha ao cadastrar livro`})
+    }
+  }
+
+  static async DeleteBook (req, res) {
+    try{ 
+      const id = req.params.id
+      await books.findByIdAndDelete(id)
+      res.status(200).json({message: "livro excluido"})
+    } catch (erro){
+      res.status(500).json({message: `${erro.message} - falha ao excluir`})
     }
   }
 }
